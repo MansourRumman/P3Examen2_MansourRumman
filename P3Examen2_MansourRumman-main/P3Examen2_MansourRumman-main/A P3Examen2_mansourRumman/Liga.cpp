@@ -72,18 +72,18 @@ void Liga::leerPartidos(char* archivoEntrada) {
 		}
 	}
 }
-/*
+
 void Liga::actualizarTabla() {
-	for(int i=0; i<partidos.size(); i++) {
-		*this->tablaPosiciones+partidos[i];
+	for(int j=0; j<partidos.size(); j++) {
+		*this->tablaPosiciones+partidos[j];
 	}
 	this->tablaPosiciones->ordenarTabla();
 }
 
-/*
+
 void Liga::exportarTablaCSV(char* archivoSalida) {
 	*this->tablaPosiciones<<archivoSalida;
-}*/
+}
 void Liga:: ligallama() {
 
 	tablaPosiciones->imprimirEquipos();

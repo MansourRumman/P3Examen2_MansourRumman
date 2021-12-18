@@ -11,10 +11,11 @@ int main(int argc, char** argv) {
 			case 1: {
 				liga->leerEquipos("equipos.csv");
 				liga->leerPartidos("partidos.csv");
+				liga->actualizarTabla();
 				break;
 			}
 			case 2: {
-
+				liga->exportarTablaCSV("tabla.csv");
 				break;
 			}
 			case 3: {
@@ -26,7 +27,7 @@ int main(int argc, char** argv) {
 				break;
 			}
 			case 5: {
-				cout<<"EQUIPOS Puntos Partidosjugados PGanados Pperdios Pempatados Ganotados Gencontra"<<endl;;
+				cout<<"EQUIPOS Puntos Partidosjugados PartidosGanados Partdios perdios Pempatados Ganotados Gencontra"<<endl;;
 				ifstream file("tabla.csv");
 				if(file.is_open()) {
 					while(!file.eof()) {

@@ -4,6 +4,7 @@
 #include "FilaTabla.h"
 #include "Partido.h"
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 class Tabla {
